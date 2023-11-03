@@ -6,7 +6,6 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"postbuild": "next-on-netlify",
 		"lint": "next lint",
 		"typecheck": "npx tsc --noEmit"
 	},
@@ -16,7 +15,6 @@
 		"firebase": "^10.5.0",
 		"framer-motion": "^10.16.4",
 		"next": "13.5.6",
-		"next-on-netlify": "^3.0.1",
 		"react": "^18",
 		"react-dom": "^18",
 		"react-firebase-hooks": "^5.1.1",
