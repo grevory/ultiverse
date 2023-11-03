@@ -7,7 +7,8 @@
 		"build": "next build",
 		"start": "next start",
 		"postbuild": "next-on-netlify",
-		"lint": "next lint"
+		"lint": "next lint",
+		"typecheck": "npx tsc --noEmit"
 	},
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^6.4.0",
