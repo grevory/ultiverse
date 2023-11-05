@@ -1,11 +1,11 @@
 "use client"
 
-import { AuthProvider } from "@/contexts/AuthProvider"
+import UserProvider from "@/contexts/userContext"
 
 export function Providers ({ children }: {children: React.ReactNode}) {
     return (
-        <AuthProvider>
+        <UserProvider>
             {children}
-        </AuthProvider>
+        </UserProvider>
     );
 }
