@@ -1,8 +1,15 @@
 "use client"
 
-import { getFirestore, setDoc, doc } from 'firebase/firestore'
 import { useEffect } from 'react'
+import Link from "next/link";
+import { getFirestore, setDoc, doc } from 'firebase/firestore'
 import { useUser } from '@/contexts/userContext'
+
+// @mui material components
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
 
 export default function RegisterPage () {
     const { loadingUser, user } = useUser()
@@ -25,6 +32,14 @@ export default function RegisterPage () {
       }
 
     return (
-        <h2>Hello {user ? (user?.displayName || user?.email) : "World"}</h2>
+        <main>
+          <Container>
+            <Box>
+              <Card>
+                <Typography variant="h2">Hello {user ? (user?.displayName || user?.email) : "World"}</Typography>
+              </Card>
+            </Box>
+          </Container>
+        </main>
     );
 }
