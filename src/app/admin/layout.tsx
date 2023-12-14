@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { DRAWER_WIDTH } from '@/constants/ui.constants';
 import Box from '@mui/material/Box';
-import ThemeRegistry from '@/contexts/ThemeRegistry/ThemeRegistry';
 import NavBar from '@/components/NavBar/NavBar.component';
 import SideBar from '@/components/NavBar/SideBar.component';
+import { Providers } from '../providers';
 
 export const metadata = {
   title: 'Ultiverse Admin',
@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <ThemeRegistry>
+        <Providers>
             <NavBar title="Ultiverse" />
             <SideBar />
             <Box
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             >
                 {children}
             </Box>
-        </ThemeRegistry>
+        </Providers>
       </body>
     </html>
   );
