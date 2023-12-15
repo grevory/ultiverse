@@ -1,3 +1,5 @@
+[![.github/workflows/code-quality.yml](https://github.com/grevory/ultiverse/actions/workflows/code-quality.yml/badge.svg)](https://github.com/grevory/ultiverse/actions/workflows/code-quality.yml)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
