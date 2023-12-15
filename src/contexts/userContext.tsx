@@ -11,7 +11,7 @@ export interface UserContextInterface {
 
 export const UserContext = createContext<UserContextInterface | null>(null)
 
-export default function UserContextComp({ children }: { children: React.ReactNode }) {
+export default function UserProvider({ children }: { children: React.ReactNode }) {
     const [user, setUser] = useState<UserInfo | null>(null)
     const [loadingUser, setLoadingUser] = useState(true) // Helpful, to update the UI accordingly.
 
