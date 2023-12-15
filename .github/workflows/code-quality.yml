@@ -24,3 +24,7 @@ jobs:
             - name: Run Unit Tests
               run: |-
                   npm run test:ci
+
+             - name: Check Types
+              run: |-
+                  npm run typecheck
