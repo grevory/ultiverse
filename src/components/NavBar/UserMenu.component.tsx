@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from 'react';
-import { useUser } from '@/contexts/userContext';
+import { useUser } from '@/contexts/UserContext';
 import { IconButton, Menu, MenuItem } from '@mui/material';
 import { AccountCircle } from '@mui/icons-material';
 
