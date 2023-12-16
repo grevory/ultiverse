@@ -5,7 +5,7 @@ import Link from "next/link";
 import { getFirestore, setDoc, doc } from 'firebase/firestore'
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 
-import { useUser } from '@/contexts/UserContext'
+import { useUser } from '@/contexts/userContext'
 
 // @mui material components
 import Box from '@mui/material/Box';
