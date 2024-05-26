@@ -1,0 +1,13 @@
+{
+	"name": "ultiverse-mono",
+	"version": "1.0.0",
+	"private": true,
+	"workspaces": [
+		"packages/backend",
+		"packages/frontend"
+	],
+	"devDependencies": {
+		"eslint": "^9.3.0",
+		"prettier": "^3.2.5"
+	}
+}
